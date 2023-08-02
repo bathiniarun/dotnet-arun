@@ -70,8 +70,8 @@ stages:
             inputs:
               action: deploy
               manifests: |
-                $(Pipeline.Workspace)/K8S/deployment.yml
-                $(Pipeline.Workspace)/K8S/service.yml
+                $(Pipeline.Workspace)/Manifest/deployment.yml
+                $(Pipeline.Workspace)/Manifest/service.yml
               imagePullSecrets: |
                 $(imagePullSecret)
               containers: |
