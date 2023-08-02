@@ -6,6 +6,5 @@ spec:
     type: LoadBalancer
     ports:
     port: 80          # The port to access the service
-    targetPort: 5000
     selector:
         app: bathiniarundotnetarun
