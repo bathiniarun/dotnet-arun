@@ -16,4 +16,4 @@ spec:
         - name: bathiniarundotnetarun 
           image: cricketipl.azurecr.io/bathiniarundotnetarunimage:latest
           ports:
-          - containerPort: 8080
+          - containerPort: 5000
