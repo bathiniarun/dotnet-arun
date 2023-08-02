@@ -1,7 +1,7 @@
-apiVersion : apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bathiniarundotnetarun 
+  name: bathiniarundotnetarun
 spec:
   replicas: 1
   selector:
@@ -10,10 +10,10 @@ spec:
   template:
     metadata:
       labels:
-        app: bathiniarundotnetarun 
+        app: bathiniarundotnetarun
     spec:
       containers:
-        - name: bathiniarundotnetarun 
+        - name: bathiniarundotnetarun
           image: cricketipl.azurecr.io/bathiniarundotnetarunimage:latest
           ports:
-          - containerPort: 5000
+            - containerPort: 80
