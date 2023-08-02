@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bathiniarundotnetarun
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bathiniarundotnetarun
+  template:
+    metadata:
+      labels:
+        app: bathiniarundotnetarun
+    spec:
+      containers:
+        - name: bathiniarundotnetarun
+          image: cricketipl.azurecr.io/bathiniarundotnetarunimage:latest
+          ports:
+            - containerPort: 80
